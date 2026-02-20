@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
   <title>Boltzmann Blog</title>
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      max-width: 800px;
+      margin: auto;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- Navigation (your future categories) -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/stat-mech/">Stat Mech</a>
+    <a href="/deep-learning/">Deep Learning</a>
+    <a href="/probability/">Probability</a>
+  </nav>
+
+  <hr>
+
   <h1>Hello Boltzmann 🐧</h1>
+
   <p>Your site is alive.</p>
-  $$ E = mc^2 $$
-  Here is my first site
-  \begin{equation*}
-  123+234=357
-  \end{equation*}
-  I love Physics and Machine Learning!!!!!
-  \begin{equation*}
-  X\sim\mathcal{N}(x;\mu,\sigma^{2})=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^{2}}\right)
-  \end{equation*}
+
+  $$E = mc^2$$
+
+  <p>Here is my first site.</p>
+
+  \[
+  123 + 234 = 357
+  \]
+
+  <p>I love Physics and Machine Learning!!!!!</p>
+
+  \[
+  X \sim \mathcal{N}(x;\mu,\sigma^{2})
+  = \frac{1}{\sqrt{2\pi}\sigma}
+  \exp\left(-\frac{(x-\mu)^{2}}{2\sigma^{2}}\right)
+  \]
+
 </body>
 </html>
