@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Law of Large Numbers — Boltzmann Blog</title>
+  <script>
+    window.MathJax = {tex: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']]}};
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>body{max-width:800px;margin:auto;padding:20px;font-family:system-ui, sans-serif}</style>
+</head>
+<body>
+  <a href="/probability/">← Back to Probability</a>
+  <h1>Law of Large Numbers</h1>
+  <p><em>2026-02-20</em></p>
+
+  <p>The Law of Large Numbers (LLN) states that the sample average converges to the expected value as sample size grows. For i.i.d. random variables $X_1,\dots,X_n$ with mean $\mu$:</p>
+
+  $$\overline{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\;p\;} \mu.$$ 
+
+  <p>This means for any $\epsilon>0$, $\Pr(|\overline{X}_n - \mu|>\epsilon)\to 0$ as $n\to\infty$.</p>
+
+  <p>Example: empirical averages of coin flips converge to $0.5$.</p>
+
+</body>
+</html>

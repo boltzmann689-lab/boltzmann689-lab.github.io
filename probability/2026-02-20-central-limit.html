@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Central Limit Theorem — Boltzmann Blog</title>
+  <script>
+    window.MathJax = {tex: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']]}};
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>body{max-width:800px;margin:auto;padding:20px;font-family:system-ui, sans-serif}</style>
+</head>
+<body>
+  <a href="/probability/">← Back to Probability</a>
+  <h1>Central Limit Theorem (CLT)</h1>
+  <p><em>2026-02-20</em></p>
+
+  <p>The CLT says that properly normalized sums of i.i.d. random variables converge in distribution to a normal distribution. If $X_i$ have mean $\mu$ and variance $\sigma^2$:</p>
+
+  $$\frac{\sum_{i=1}^n X_i - n\mu}{\sigma\sqrt{n}} \xrightarrow{d} \mathcal{N}(0,1).$$
+
+  <p>This explains why Gaussian approximations are ubiquitous in statistics.</p>
+
+</body>
+</html>
